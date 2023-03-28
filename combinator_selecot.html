@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.outer p{
+            color:red;
+        }
+         div.inner>strong{
+            color:blue;
+        }
+        h1 + p{
+            color:white;
+            background-color: black;
+        }
+        h2~ .hlo{
+            color:black;
+            background-color: seagreen;
+        } 
+        .box{
+            width:500px;
+            height:300px;
+            border:2px solid red;
+            
+            box-sizing:border-box;
+            padding:100px;
+            background-image: url("image2.jpg");
+            background-size: cover;
+            /* background:linear-gradient(red,blue); */
+            mix-blend-mode: multiply;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <p>hlo here we are using descendent selector</p>
+    </div>
+    <div class="inner">
+        <strong>Here we are using child selector</strong>
+    </div>
+
+    <div class="adjacent_sibling">
+        <em>here we are applying adjacent sibling selector</em>
+    </div>
+    <h1>it is pareent for adjacent selector</h1>
+    <p>here we are applying adjacent sibling selector also</p>
+     
+    <h2>it is parent for adjacent selector</h2>
+    <div class="hlo">
+    <p>here we are applying general sibling selector</p>
+    <strong>here also we are applying general sibling selector</strong>
+
+    <div class="box">
+
+    </div>
+    </div>
+</body>
+</html>

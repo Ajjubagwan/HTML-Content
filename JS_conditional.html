@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
+</head>
+<body>
+<script>
+    // program to find largest between two numbers
+    // var a = 40;
+    // var b = 20;
+    // if(a>b)
+    // {
+    //     document.write("yes")
+    // }
+    // else
+    // {
+    //     document.write("No")
+    // }
+
+    // program to find largest between three numbers:
+
+    // var a = 1000;
+    // var b = 500;
+    // var c = 30;
+    // if(a>b){
+    //     if(a>c)
+    //     {
+    //         document.write("A is larger : ",a);
+    //     }
+    //     else
+    //     {
+    //         document.write("C is larger",c);
+    //     }
+    // }
+    // else 
+    // {
+    //     if(b>c)
+    //     {
+    //     document.write("B is larger :",b);
+    //     }
+    //     else{
+    //         document.write("C is larger :",c);
+    //     }
+       
+    // }
+
+
+    // program to find the largest between three numbers:
+    var a = prompt("enter value of a");
+    var b = prompt("enter value of b");
+    var c = prompt("enter value of c");
+    if(a>b && a>c)
+    {
+        document.write("A is larger :",a);
+    }
+    else if(b>a && b>c)
+    {
+        document.write("B is larger :",b);
+    }
+    else if(c>a && c>b)
+    {
+        document.write("C is larger :",c)
+
+    }
+    else if(a===b===c)
+    {
+        document.write("All are Equal")
+    }
+
+
+    
+</script>
+
+</body>
+</html>

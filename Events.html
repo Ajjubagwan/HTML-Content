@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position:relative;
+        }
+        .box{
+            position:absolute;
+            width:300px;
+            height:300px;
+            top:50px;
+            left:400px;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <h4>Mouse Event</h4>
+    <h4>Keyboard Event</h4>
+    <div class="container">
+        <!-- onclick :  it will work when we do sigle left click on div. -->
+        <!-- <div class="box" onclick="alert('hello')"></div>  -->
+
+        <!-- ondblclick : it will work when we do double left click on div -->
+        <!-- <div class="box" ondblclick="alert('hello')"></div> -->
+
+        <!-- oncontextmenu : it will work when we do double right click on div  -->
+        <!-- <div class="box" oncontextmenu="alert('hello')"></div> -->
+
+        <!-- onmouseup: it will work when we leave either right or left click after clicking on div  -->
+        <!-- <div class="box" onmouseup="alert('hello')"></div> -->
+
+        <!-- onmousedown : it will work when we do click on  div either it is left or right click-->
+        <!-- <div class="box" onmousedown="alert('hello')"></div> -->
+
+        <!--onmouseenter : it will work when cursor enter in div section  -->
+        <!-- <div class="box" onmouseenter="alert('hello')"></div> -->
+
+        <!--onmouseleave :  it will work when cursor move out form div section   -->
+        <!-- <div class="box" onmouseleave="alert('hello')"></div> -->
+
+        <!--onmousewheel :   it will work when we do scroll on div-->
+        <!-- <div class="box" onmousewheel="alert('hello')"></div> -->
+
+        <!--onmouseleave :  -->
+        <!-- <div class="box" onmouseleave="alert('hello')"></div> -->
+
+
+
+        <!-- keyboard Event -->
+        
+        <div class="box" >
+            <input type="text" id="input" placeholder="username" onkeydown="keydownevent()"/>
+        
+        </div>
+        <script>
+            function keydownevent(){
+                document.getElementById("input").style.backgroundcolor=red;
+                alert("pressede a key");
+            }
+        </script>
+    </div>
+    
+</body>
+</html>

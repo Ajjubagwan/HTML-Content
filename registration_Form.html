@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registraion_form</title>
+    <style>
+        input[type="text"]{
+            color:blue;
+            background-color: rgb(243, 206, 160);
+            border-radius:50px;
+            border-style: solid;
+        }
+        input[type="password"]{
+            color:blue;
+            background-color: rgb(243, 206, 160);
+            border-radius:50px;
+            border-style: solid;
+
+
+        }
+        .submit:hover{
+            background-color: green;
+        }
+        .reset:hover{
+            background-color: red;
+        }
+        
+    </style>
+
+</head>
+
+<body style = "background-image: url('https://images.blocksurvey.io/templates/concert-registration-form.svg') ">
+
+    <h2><marquee direction = right>Registration form</marquee></h2>
+    <form action="#">
+        <lable for = "user">username</lable>
+        <br>
+        <input type = "text" placeholder="username" name ='user'>
+        <br>
+        <label for ="password">password</label>
+        <br>
+        <input type = "password" placeholder="password" name = "password">
+        <br>
+        <input type = "submit" name ="submit" onclick ="alert('saved')" class="submit">
+        <input type = "reset" name = "reset" class = "reset">
+        <br>
+        <label for = "gender">Gender</label>
+        <br>
+        <input type = "radio" name ='gen'>Male  <!--we can use checked for mandatory condition-->
+        <input type = "radio" name  ='gen'>female
+        <input type = 'radio' name = "gen">other
+        <br></br>
+        
+        <label> date_of_birth</label><br>
+        <input type = "date" min="2005-10-02" max = "2023-12-31"><br></br>
+
+        <label>Address_details--> </label>
+        <br>
+        <input  type = "checkbox" name = "add" value = "add">adhar card 
+        <input type = 'checkbox' name = "add" value = "add">pan card
+        <input type = 'checkbox' name = "add" value = "add">voting card
+        <input type = 'checkbox' name = "add" value = "add">license
+        <br></br>
+
+        <input type="tel" name = "telephone" pattern = "{0-9}3-{0-9}3-{0-9}4"placeholder = "123-123-1234">
+        <br>    
+        <input type="submit" name = "sumbit" onclick="alert('phone_no_saved')">
+        <br></br>
+        <fieldset>
+            <legend><label for = "address">enter your city name </label></legend>
+            <select name = "city" id = "">
+                <option value = "noida" >noida</option>
+                <option value = "delhi">delhi</option>
+                <option value = "faridabad">faridabad</option>
+                <option value = "gurugraon">gurugraon</option>
+            </select>
+        </fieldset>
+        <br></br>
+        <fieldset>
+        <legend><label for ="eduction_details">Education_details</label></legend>
+        <label>Course_details</label>
+        <select name = "Course_details" id = "">
+            <option value = "UG">UG</option>
+            <option value = "PG">PG</option>
+            <option value = "DIPLOMA">DIPLOMA</option>
+            <option value = "OTHER COURSES">OTHER COURSES</option>
+        </select>  &nbsp;
+        
+        <label>College_name</label>
+        <select name = "College_name" id = "">
+            <option value = "NGF">NGF COLLEGE OF ENGINEERING AND TECHNOLOGY,PALWAL</option>
+            <option value = "ADVANCE">ADVANCE COLLEGE OF ENGINEERING AND TECHNOLOGY, PALWAL</option>
+            <option value = "YMCA">J.C BOSS YMCA UNIVERSITY OF SCIENCE AND TECHNOLOIGY, FARIDABAD</option>
+            <option value = "ARAVALI">ARAVALI COLLEGE OF ENGINEERING AND TECHNOLOGY, FARIDABAD</option>
+        </select><br></br>
+        <label>Course_Name</label>
+        <select name = "Course name" id = "">
+            <option value = "B.TECH">B.TECH</option>
+            <option value = "B.COM">B.COM</option>
+            <option value = "B.SC">B.SC</option>
+            <option value = "OTHER">OTHER</option>
+        </select> &nbsp;    
+        <label>Year_of_passout</label>
+        <select name = "Year_of_passout" id = "">
+            <option value = "2017">2017</option>
+            <option value = "2018">2018</option>
+            <option value = "2019">2019</option>
+            <option value = "2020">2020</option>
+            <option value = "2021">2021</option>
+            <option value = "2022">2022</option>
+            <option value = "2023">2023</option>
+            <option value = "2024">2024</option>
+            <option value = "2015">2025</option>
+           
+        </select>
+        
+        </fieldset>
+        <br></br>
+        <label>Adhar_card details</label>
+        <br>
+        <input type="tel" name = "Adhar" pattern = "{0-9}4-{0-9}-{0-9}4"placeholder = "1234-1234-1234"><br>
+        <input type = "submit" name = "submit" onclick='alert("adhar_recieved")'>
+        <br></br>
+        <label>Upload_passport_size_photo</label><br>
+        <input type = "file">
+        <br></br>
+        <label>upload_birth_proof</label>
+        <br>
+        <input type = "file">
+        <br></br>
+        <label>share your linked_In profile </label><br>
+        <input type = "url" placeholder = "url">
+
+        <br></br>
+       
+        <input type = "checkbox">
+        I agree all statements in <a href="term.html">term and condtion</a>
+        <br></br>
+
+        <input type = "submit" name = "submit" onclick = 'alert("form filled succussfully")' class = "submit">
+        <input type = "reset" name = "reset" class = "reset">
+
+
+
+
+        
+    </form>
+    
+</body>
+
+</html>
